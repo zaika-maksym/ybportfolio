@@ -113,7 +113,7 @@ ol {
   background-repeat: no-repeat;
   background-size: contain;
   width: 13px;
-  height: 12px;
+  height: 13px;
 }
 
 .workplace_position {
@@ -202,11 +202,11 @@ ol {
     content: "";
     display: block;
     width: 4px;
-    height: 717px;
+    height: 715px;
     background-color: #ff6b09;
     position: absolute;
     left: 3px;
-    top: 53px;
+    top: 52px;
   }
 
   .education_head {
@@ -223,7 +223,7 @@ ol {
     content: "";
     display: block;
     width: 4px;
-    height: 147px;
+    height: 157px;
     background-color: #ff6b09;
     position: absolute;
     left: 3px;
