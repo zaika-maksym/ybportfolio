@@ -6,6 +6,25 @@ ol {
   list-style: none;
   padding: 0px;
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+.link-underline {
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .header {
   font-family: Roboto, sans-serif;
 
@@ -28,8 +47,9 @@ ol {
 
 .profession {
   font-weight: 500;
-  color: orange;
+  color: #ff6b09;
   position: relative;
+  margin-top: 30px;
 }
 
 .profession::before {
@@ -42,7 +62,18 @@ ol {
   left: 24px;
   top: 45px;
 }
-
+.educationplace::before {
+  content: "";
+  display: inline-flex;
+  position: relative;
+  right: 18px;
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 12px;
+  top: 19px;
+}
 .education_list {
   position: relative;
   display: block;
@@ -58,11 +89,19 @@ ol {
   top: 6px;
 }
 
+.educationplace {
+  font-weight: 700;
+  font-size: 17px;
+  position: relative;
+  right: 13px;
+  margin-top: 20px;
+}
 .workplace {
   font-weight: 700;
   font-size: 17px;
   position: relative;
-  right: 11px;
+  right: 13px;
+  margin-top: 20px;
 }
 
 .workplace::before {
@@ -73,12 +112,12 @@ ol {
   background-image: url("../img/ellipse.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 12px;
+  width: 13px;
   height: 12px;
 }
 
 .workplace_position {
-  color: orange;
+  color: #ff6b09;
   font-weight: 400;
 }
 
@@ -118,6 +157,9 @@ ol {
     display: none;
   }
 
+  .main_info-bottom {
+    margin-top: 20px;
+  }
   .container {
     padding: 16px;
     width: 300px;
@@ -127,12 +169,16 @@ ol {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 280px;
-    padding-left: 30px;
+    width: 277px;
+    padding-left: 58px;
+    margin-bottom: 70px;
+    margin-top: 20px;
   }
 
   .main_info-contact {
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 50px;
   }
 
   /* .workplace {
@@ -155,12 +201,18 @@ ol {
   .profession::before {
     content: "";
     display: block;
-    width: 3px;
-    height: 740px;
+    width: 4px;
+    height: 717px;
     background-color: #ff6b09;
     position: absolute;
-    left: 5px;
+    left: 3px;
     top: 53px;
+  }
+
+  .education_head {
+    margin-top: 30px;
+    color: #ff6b09;
+    font-weight: 500;
   }
 
   .education_list {
@@ -170,12 +222,74 @@ ol {
   .education_list::before {
     content: "";
     display: block;
-    width: 3px;
-    height: 150px;
+    width: 4px;
+    height: 147px;
     background-color: #ff6b09;
     position: absolute;
-    left: 5px;
-    top: 6px;
+    left: 3px;
+    top: 33px;
+  }
+
+  .education_comm {
+    display: flex;
+    margin-left: 14px;
+  }
+
+  .contact_box {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .contact_box:hover {
+    cursor: pointer;
+    fill: #ff6b09;
+    color: #ff6b09;
+  }
+  .contact_address {
+    display: flex;
+    width: 228px;
+    text-decoration: none;
+    color: #535353;
+    margin: 0;
+  }
+
+  .contact_other {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+
+    text-decoration: none;
+    color: #535353;
+  }
+
+  .contact_box_other {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+  .contact_other:hover {
+    cursor: pointer;
+    fill: #ff6b09;
+    color: #ff6b09;
+  }
+
+  .main_info-lang-list:hover {
+    fill: #ff6b09;
+    color: #ff6b09;
+    cursor: pointer;
+  }
+
+  .svg_home {
+    display: block;
+    width: 29px;
+    height: 19px;
+    fill: #535353;
+  }
+
+  .svg_home:hover,
+  .contact_address:hover {
+    fill: #ff6b09;
+    color: #ff6b09;
   }
 }
 
@@ -191,7 +305,8 @@ ol {
     display: block;
     color: black;
     position: static;
-    padding-left: 30px;
+    padding-left: 35px;
+    margin-top: 50px;
   }
 
   .main_info-bottom {
@@ -200,7 +315,8 @@ ol {
 
   .main_info-lang {
     display: block;
-    padding-left: 30px;
+    padding-left: 10px;
+    margin-bottom: 362px;
   }
 
   .main_info-contact {
@@ -218,6 +334,7 @@ ol {
     font-size: 35px;
     font-weight: 900;
     color: #535353;
+    margin-top: 50px;
   }
   .profession {
     margin-left: 28px;
@@ -225,31 +342,43 @@ ol {
   .profession::before {
     content: "";
     display: block;
-    width: 3px;
-    height: 590px;
+    width: 4px;
+    height: 561px;
     background-color: #ff6b09;
     position: absolute;
-    left: 6px;
-    top: 45px;
+    left: 1px;
+    top: 53px;
   }
   .education_head {
-    color: orange;
+    color: #ff6b09;
     font-weight: 500;
     margin-left: 26px;
   }
-
+  .educationplace::before {
+    content: "";
+    display: inline-flex;
+    position: relative;
+    right: 9px;
+    background-image: url("../img/ellipse.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 12px;
+    top: 19px;
+  }
   .education_list {
     position: relative;
+    padding-bottom: 50px;
   }
   .education_list::before {
     content: "";
     display: block;
-    width: 3px;
+    width: 4px;
     height: 130px;
     background-color: #ff6b09;
     position: absolute;
-    left: 34px;
-    top: 6px;
+    left: 31px;
+    top: 31px;
   }
 
   .workplace_container {
@@ -263,11 +392,68 @@ ol {
     content: "";
     display: inline-flex;
     position: relative;
-    right: 8px;
+    right: 11px;
     background-image: url("../img/ellipse.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 12px;
     height: 12px;
+  }
+
+  .contact_box {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .contact_box:hover {
+    cursor: pointer;
+    fill: #ff6b09;
+    color: #ff6b09;
+  }
+  .contact_address {
+    display: flex;
+    width: 228px;
+    text-decoration: none;
+    color: #535353;
+    margin: 0;
+  }
+
+  .contact_other {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+
+    text-decoration: none;
+    color: #535353;
+  }
+
+  .contact_box_other {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+  .contact_other:hover {
+    cursor: pointer;
+    fill: #ff6b09;
+    color: #ff6b09;
+  }
+
+  .main_info-lang-list:hover {
+    fill: #ff6b09;
+    color: #ff6b09;
+    cursor: pointer;
+  }
+
+  .svg_home {
+    display: block;
+    width: 29px;
+    height: 19px;
+    fill: #535353;
+  }
+
+  .svg_home:hover,
+  .contact_address:hover {
+    fill: #ff6b09;
+    color: #ff6b09;
   }
 }
