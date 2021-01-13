@@ -30,7 +30,7 @@ ol {
 
   justify-content: center;
   margin: 0 auto;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .mainphoto {
@@ -42,11 +42,10 @@ ol {
   margin-top: 35px;
   border-radius: 30px;
   position: relative;
-  padding-left: 30px;
 }
 
 .profession {
-  font-weight: 500;
+  font-weight: 600;
   color: #ff6b09;
   position: relative;
   margin-top: 30px;
@@ -102,6 +101,7 @@ ol {
   position: relative;
   right: 13px;
   margin-top: 20px;
+  color: #535353;
 }
 
 .workplace::before {
@@ -233,6 +233,7 @@ ol {
   .education_comm {
     display: flex;
     margin-left: 14px;
+    color: #535353;
   }
 
   .contact_box {
@@ -301,6 +302,13 @@ ol {
     margin: 0 auto;
   }
 
+  .header {
+    padding-left: 25px;
+  }
+
+  aside {
+    background-color: #ebe7e7;
+  }
   .main_info {
     display: block;
     color: black;
@@ -316,7 +324,11 @@ ol {
   .main_info-lang {
     display: block;
     padding-left: 10px;
-    margin-bottom: 362px;
+    margin-bottom: 335px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #535353;
+    font-family: Roboto, sans-serif;
   }
 
   .main_info-contact {
@@ -324,7 +336,7 @@ ol {
   }
 
   .container {
-    width: 345px;
+    width: 422px;
     margin: 0;
     margin-top: 10px;
     padding-left: 10px;
@@ -351,7 +363,7 @@ ol {
   }
   .education_head {
     color: #ff6b09;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 26px;
   }
   .educationplace::before {
