@@ -152,6 +152,9 @@ ol {
   color: #535353;
 }
 
+
+
+
 @media screen and (min-width: 320px) {
   .main_info {
     display: none;
@@ -163,6 +166,7 @@ ol {
   .container {
     padding: 16px;
     width: 300px;
+    
   }
 
   .main_info-lang {
@@ -292,13 +296,36 @@ ol {
     fill: #ff6b09;
     color: #ff6b09;
   }
+
+  .button {
+    text-decoration: none;
+    margin-top: 80px;
+    font-weight: 700;
+    margin-left: 35px;
+    font-style: normal;
+    color: #535353;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    
+        
+  }
+  
+  .button:hover {
+    color: #ff6b09;
+    
+  }
+
+
+
+
 }
 
 @media screen and (min-width: 800px) {
   .main {
     display: flex;
-
-    width: 845px;
+    border: solid 3px #535353;
+    border-radius: 5px;
+    width: 758px;
     margin: 0 auto;
   }
 
@@ -340,6 +367,7 @@ ol {
     margin: 0;
     margin-top: 10px;
     padding-left: 10px;
+    border: none;
   }
 
   .header_name {
@@ -468,4 +496,25 @@ ol {
     fill: #ff6b09;
     color: #ff6b09;
   }
+
+  .button {
+    text-decoration: none;
+    margin-top: 80px;
+    font-weight: 700;
+    margin-left: 12px;
+    font-style: normal;
+    color: #535353;
+    box-sizing: border-box;
+    text-transform: uppercase;
+        
+  }
+
+  .button:hover {
+    color: #ff6b09;
+    
+    
+  }
+
+
+
 }
